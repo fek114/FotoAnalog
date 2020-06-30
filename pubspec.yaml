@@ -1,0 +1,51 @@
+name: fotoanalog
+description: A new Flutter project.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.2.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera:
+    git:
+      url: git://github.com/kmorkos/plugins.git
+      ref: camera/crash-fix
+      path: packages/camera/
+  path_provider: ^0.4.1
+  cupertino_icons: ^0.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  font_awesome_flutter: ^8.0.1
+
+module:
+  androidX: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/36680.jpg
+    - assets/images/onboarding0.png
+    - assets/images/login_logo.png
+
+  fonts:
+    - family: CM Sans Serif
+      fonts:
+        - asset: assets/fonts/cm_sans_serif_2012.ttf
+    - family: WorkSansSemiBold
+      fonts:
+        - asset: assets/fonts/Work_Sans/WorkSans-SemiBold.ttf
+
+    - family: WorkSansBold
+      fonts:
+        - asset: assets/fonts/Work_Sans/WorkSans-Bold.ttf
+
+    - family: WorkSansMedium
+      fonts:
+        - asset: assets/fonts/Work_Sans/WorkSans-Medium.ttf
